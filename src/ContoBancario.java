@@ -6,4 +6,12 @@ public class ContoBancario {
         this.numberAccount = numberAccount;
         this.balanceAccount = 0;
     }
+
+    public int addMoney(int addMoney){
+        return this.balanceAccount += addMoney;
+    }
+
+    public int getBalance(){
+        return balanceAccount;
+    }
 }
