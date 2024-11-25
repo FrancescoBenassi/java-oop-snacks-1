@@ -18,4 +18,8 @@ public class ContoBancario {
     public int getBalance(){
         return balanceAccount;
     }
+
+    public String getAllValues(){
+        return numberAccount + " " + balanceAccount;
+    }
 }
