@@ -8,4 +8,8 @@ public class Studente {
         this.surnameUser = surnameUser;
         this.ageUser = ageUser;
     }
+
+    public String getAllValues(){
+        return nameUser + ", "+ surnameUser + ", "+ ageUser + " anni";
+    }
 }
