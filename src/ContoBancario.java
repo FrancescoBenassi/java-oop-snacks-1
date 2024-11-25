@@ -1,21 +1,25 @@
 public class ContoBancario {
     private int numberAccount;
-    private int balanceAccount;
+    private double balanceAccount;
 
     public ContoBancario(int numberAccount){
         this.numberAccount = numberAccount;
         this.balanceAccount = 0;
     }
 
-    public int addMoney(int addMoney){
-        return this.balanceAccount += addMoney;
+    public void setAddMoney(double addMoney){
+         this.balanceAccount += addMoney;
     }
 
-    public int takeMoney(int takeMoney){
-        return this.balanceAccount -= takeMoney;
+    public void setTakeMoney(double takeMoney){
+        if(this.balanceAccount - takeMoney >= 0){
+            this.balanceAccount -= takeMoney;
+        } else {
+            System.out.println("Nono posso darti  soldi perchè sei povero");
+        }
     }
 
-    public int getBalance(){
+    public double getBalance(){
         return balanceAccount;
     }
 
